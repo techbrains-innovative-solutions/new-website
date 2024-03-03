@@ -1,1 +1,33 @@
-<p>blog works!</p>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-12 pl-20 pr-20 commonStyle float-left aboutUs-section ">
+    <div
+        class="col-lg-12 col-md-12 col-sm-12 col-12 pl-0 pr-0 commonStyle float-left aboutUs-panel textCenter ">
+        <div
+            class="col-lg-12 col-md-12 col-sm-12 col-12 pl-0 pr-0 commonStyle float-left overflowHidden aboutUsHeader-section">
+            <h2 class="f-32 headingLevel2 animated "
+                [ngClass]="commonService.blogAnimation?'fadeInUp delay1sec':''">Blog</h2>
+        </div>
+        <div
+            class="col-lg-12 col-md-12 col-sm-12 col-12 pl-0 pr-0 commonStyle float-left aboutUsData-section mt-20 overflowHidden">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img [ngClass]="commonService.blogAnimation?'fadeInUp delay2sec':''"
+                        src="assets/images/blog.svg" alt="blog">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 content-sec">
+                    <div class="animated abt-us-btn" [ngClass]="commonService.blogAnimation?'fadeInUp delay2sec':''">
+                        <p class="p-tag animated " [ngClass]="commonService.blogAnimation?'fadeInUp delay2sec':''">Check out our Company blog to know more about software engineering,Technology, new trends and business management ideas.</p>
+
+                        <div class="free-abt-us-title content-center">
+                            <a class="btn-main-abt-us abt-btn lnk" (click)="getBlog()">Read Our Blog<i
+                                    class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End About-->

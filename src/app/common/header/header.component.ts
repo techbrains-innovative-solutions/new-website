@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { CommonService } from '../../shared/services/common.service';
 import { WINDOW } from '@ng-toolkit/universal';
 import { Meta } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,7 +11,10 @@ import { Meta } from '@angular/platform-browser';
 export class HeaderComponent implements OnInit {
   keywordsArray:any[]= [];
   keywords:any;
-  constructor(@Inject(WINDOW) private window: Window, public commonService:CommonService,private metaTagService: Meta) { }
+  constructor(@Inject(WINDOW) private window: Window, 
+  public commonService:CommonService,
+  private router: Router,
+  private metaTagService: Meta) { }
   openmenu :boolean;
   menuList=[
     {name:"About Us"},
@@ -44,6 +48,7 @@ gotoContent(value , platform){
 
 if(value=="About Us"){
   this.commonService.selectedMenuItem=value;
+  this.router.navigate(['']);
   if(platform == 'mobile'){
   this.openMenu();
   }
@@ -106,10 +111,7 @@ if(value=="Team"){
 }
 if(value=="Blog"){
   this.commonService.selectedMenuItem=value;
-  window.open('https://blog.techbrainsinnovative.in/',"_blank");
-}
-if(value=="Contact us"){
-  this.commonService.selectedMenuItem=value;
+  this.commonService.blogAnimation =true;
   if(platform == 'mobile'){
     this.openMenu();
     }
@@ -117,6 +119,18 @@ if(value=="Contact us"){
     top: 2990,
     behavior: 'smooth',
   })
+ 
+}
+if(value=="Contact us"){
+  this.commonService.selectedMenuItem=value;
+  if(platform == 'mobile'){
+    this.openMenu();
+    }
+  this.window.scrollTo({
+    top: 3250,
+    behavior: 'smooth',
+  })
+ 
 }
 }
 }

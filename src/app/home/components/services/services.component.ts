@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../../../shared/services/common.service';
 import { Meta } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-services',
@@ -10,7 +11,12 @@ import { Meta } from '@angular/platform-browser';
 export class ServicesComponent implements OnInit {
   keywordsArray:any[]= [];
   keywords:any;
-  constructor(public commonService:CommonService,private metaTagService: Meta) { }
+  servicesList = [{
+    serviceImage:'',
+    serviceName:'',
+    serviceDescription:''
+  }]
+  constructor(public commonService:CommonService,private metaTagService: Meta , private router:Router) { }
 
   ngOnInit() {
     this.commonService.getkeywords().subscribe(data=>{
@@ -25,6 +31,10 @@ export class ServicesComponent implements OnInit {
        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
      ]);
      });
+  }
+
+  serviceViewMore(servicearea:string){
+    this.router.navigate(['/service-detail'],{queryParams:{ service: servicearea}});
   }
 
 }

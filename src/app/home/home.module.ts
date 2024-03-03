@@ -18,8 +18,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CustomerslistComponent } from './components/customerslist/customerslist.component';
 import { ProductsComponent } from './components/products/products.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { ServiceDetailComponent } from './components/service-detail/service-detail.component';
 @NgModule({
-  declarations: [DashboardComponent, CarouselComponent, AboutUsComponent, ServicesComponent, IndustriesComponent, SampleComponent, TechnologyExpertiseComponent, TeamComponent, ContactUsComponent, CustomerslistComponent, ProductsComponent, BlogComponent],
+  declarations: [DashboardComponent, CarouselComponent, AboutUsComponent, ServicesComponent, IndustriesComponent, SampleComponent, TechnologyExpertiseComponent, TeamComponent, ContactUsComponent, CustomerslistComponent, ProductsComponent, BlogComponent, ServiceDetailComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

@@ -1,0 +1,65 @@
+.content-sec{
+    padding-top:25px;
+    .p-tag{
+        text-align: left;
+    }
+}
+
+.free-abt-us-title {
+    display: inline-flex;
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.content-center {
+    align-self: center;
+    align-items: center;
+}
+
+.zoomInDown {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+}
+.abt-us-btn {
+    margin: 75px  auto 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    p {
+        font-size: 25px;
+        color: #050748;
+    }
+}
+
+.abt-btn {
+    background: #f92c8b;
+    background: -moz-linear-gradient(left,#f92c8b 0,#b02cd6 100%);
+    background: -webkit-linear-gradient(left,#f92c8b 0,#b02cd6 100%);
+    background: linear-gradient(to right,#f92c8b 0,#b02cd6 100%);
+    -webkit-box-shadow: 0 10px 15px 0 rgb(175 0 202 / 20%);
+    box-shadow: 0 10px 15px 0 rgb(175 0 202 / 20%);
+}
+
+.btn-main-abt-us {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Poppins,sans-serif;
+    min-width: 215px;
+    line-height: 56px;
+    text-align: center;
+    outline: 0;
+    color: #fff;
+    cursor:pointer;
+    background-color: #ff1f8e;
+    border: none;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    display: inline-block;
+    position: relative;
+    -webkit-box-shadow: 0 10px 15px 0 rgb(233 30 99 / 15%);
+    box-shadow: 0 10px 15px 0 rgb(233 30 99 / 15%);
+}
+.p-tag{
+   font-size: 16px;
+}
