@@ -9,9 +9,12 @@ import { CommonService } from '../../shared/services/common.service';
 export class FooterComponent implements OnInit {
   keywordsArray:any[]= [];
   keywords:any;
+  year:any;
   constructor(private metaTagService: Meta,private apiservice:CommonService) { }
 
   ngOnInit() {
+    let year = new Date();
+    this.year = year.getFullYear();
     this.apiservice.getkeywords().subscribe(data=>{
       data['software_company'].forEach(element => {
        this.keywordsArray.push(element.Keyword);

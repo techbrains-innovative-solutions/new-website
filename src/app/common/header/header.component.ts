@@ -17,7 +17,9 @@ export class HeaderComponent implements OnInit {
     {name:"Services"},
     {name:"Industries"},
     {name:"Technology"},
+    {name: "Products"},
     {name:"Team"},
+    {name:"Blog"},
     {name:"Contact us"}
   ]
   ngOnInit() {
@@ -82,15 +84,29 @@ if(value=="Technology"){
     behavior: 'smooth',
   })
 }
+if(value=="Products"){
+  this.commonService.selectedMenuItem=value;
+  if(platform == 'mobile'){
+    this.openMenu();
+    }
+  this.window.scrollTo({
+    top: 2680,
+    behavior: 'smooth',
+  })
+}
 if(value=="Team"){
   this.commonService.selectedMenuItem=value;
   if(platform == 'mobile'){
     this.openMenu();
     }
   this.window.scrollTo({
-    top: 2580,
+    top: 2850,
     behavior: 'smooth',
   })
+}
+if(value=="Blog"){
+  this.commonService.selectedMenuItem=value;
+  window.open('https://blog.techbrainsinnovative.in/',"_blank");
 }
 if(value=="Contact us"){
   this.commonService.selectedMenuItem=value;

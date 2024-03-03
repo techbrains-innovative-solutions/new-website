@@ -10,6 +10,8 @@ export class CommonService {
   aboutusAnimation:boolean;
   servicesAnimation:boolean;
   industriesAnimation:boolean;
+  productsAnimation:boolean;
+  blogAnimation:boolean;
   selectedMenuItem:string;
   constructor(private httpClient: HttpClient) { }
 

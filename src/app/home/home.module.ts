@@ -16,8 +16,10 @@ import { AgmCoreModule } from '@agm/core';
 ;
 import { ReactiveFormsModule } from '@angular/forms';
 import { CustomerslistComponent } from './components/customerslist/customerslist.component';
+import { ProductsComponent } from './components/products/products.component';
+import { BlogComponent } from './components/blog/blog.component';
 @NgModule({
-  declarations: [DashboardComponent, CarouselComponent, AboutUsComponent, ServicesComponent, IndustriesComponent, SampleComponent, TechnologyExpertiseComponent, TeamComponent, ContactUsComponent, CustomerslistComponent],
+  declarations: [DashboardComponent, CarouselComponent, AboutUsComponent, ServicesComponent, IndustriesComponent, SampleComponent, TechnologyExpertiseComponent, TeamComponent, ContactUsComponent, CustomerslistComponent, ProductsComponent, BlogComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

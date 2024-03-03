@@ -2,7 +2,7 @@
    "software_company": [
     {
       "Keyword": "Techbrains",
-      "Competition": "MEDIUM",
+      "Competition": "HIGH",
       "Competition Index": 45,
       "Search Volume": 33100,
       "Low Top Page Bid": 0.3,
@@ -2534,16 +2534,24 @@
       "High Top Page Bid": 2.15
     },
     {
-      "Keyword": "bangladeshi web design company",
-      "Competition": "LOW",
+      "Keyword": "Bangalore web design company",
+      "Competition": "HIGH",
       "Competition Index": 30,
       "Search Volume": 30,
       "Low Top Page Bid": 0.33,
-      "High Top Page Bid": 0.8
+      "High Top Page Bid": 1.51
+    },
+    {
+      "Keyword": "Bangalore Software company",
+      "Competition": "HIGH",
+      "Competition Index": 30,
+      "Search Volume": 30,
+      "Low Top Page Bid": 0.33,
+      "High Top Page Bid": 1.51
     },
     {
       "Keyword": "best website development agency",
-      "Competition": "LOW",
+      "Competition": "HIGH",
       "Competition Index": 24,
       "Search Volume": 30,
       "Low Top Page Bid": 0.37,
